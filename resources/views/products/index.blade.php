@@ -1,4 +1,4 @@
-<x-layout title="Catálogo de Produtos">
+<x-layouts.layout title="Catálogo de Produtos">
     @isset($successMessage)
         <div class="alert alert-success" role="alert">
             {{ $successMessage }}
@@ -24,13 +24,13 @@
                     </div>
                     <div class="col-12 col-md-3 d-flex justify-content-end mt-3 mb-1 m-md-0 gap-1">
                         <x-button color="warning" buttontitle="Editar" onclick="location.href='{{ route('products.edit', $product->id) }}'"></x-button>
-                        <x-request-button
+                        <x-button_form
                             type="submit"
                             method="DELETE"
                             color="danger" 
                             buttontitle="Excluir"
                             url="{{ route('products.destroy', $product->id) }}"
-                            ></x-request-button> 
+                            ></x-button_form> 
                     </div>
                 </div>
             @endforeach
@@ -38,4 +38,4 @@
             ainda não existem produtos!
         @endif
     </div>
-</x-layout>
+</x-layouts.layout>

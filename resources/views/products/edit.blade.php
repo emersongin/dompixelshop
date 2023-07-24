@@ -1,6 +1,6 @@
-<x-layout title="Editando Produto">
+<x-layouts.layout title="Editando Produto">
     <x-breadcrumb title="Edição de produto"></x-breadcrumb>
-    <x-product-form 
+    <x-product_form 
         url="{{ route('products.update', $id) }}" 
         method="PUT"
         buttontitle="Atualizar" 
@@ -8,5 +8,5 @@
         price="{{ $price }}" 
         description="{{ $description }}" 
         stored="{{ $stored }}">
-    </x-product-form>
-</x-layout>
+    </x-product_form>
+</x-layouts.layout>

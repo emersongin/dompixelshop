@@ -1,6 +1,6 @@
-<x-layout title="Adicionando Produto">
+<x-layouts.layout title="Adicionando Produto">
     <x-breadcrumb title="Cadastro de produto"></x-breadcrumb>
-        <x-product-form 
+        <x-product_form 
             url="{{ route('products.store') }}" 
             method="post" 
             buttontitle="Adicionar"
@@ -9,5 +9,5 @@
             stored="{{ old('stored') }}"
             description="{{ old('description') }}"
             >
-        </x-product-form>
-</x-layout>
+        </x-product_form>
+</x-layouts.layout>

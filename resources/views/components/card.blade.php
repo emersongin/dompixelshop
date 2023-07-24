@@ -10,13 +10,13 @@
         </div>
         <div class="d-grid d-md-flex gap-2 justify-content-md-end">
             <x-button color="warning" buttontitle="Editar" onclick="location.href='{{ route('products.edit', $id) }}'"></x-button>
-            <x-request-button
+            <x-button_form
                 type="submit"
                 method="DELETE"
                 color="danger" 
                 buttontitle="Excluir"
                 url="{{ route('products.destroy', $id) }}"
-                ></x-request-button> 
+                ></x-button_form> 
         </div>
     </div>
 </div>

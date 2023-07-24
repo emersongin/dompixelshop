@@ -1,4 +1,4 @@
-<x-layout title="Produto">
+<x-layouts.layout title="Produto">
     <x-breadcrumb title="Visualização de produto"></x-breadcrumb>
     <div class="row justify-content-center">
         <x-card
@@ -9,4 +9,4 @@
             description="{{ $description }}"
         ></x-card>
     </div>
-</x-layout>
+</x-layouts.layout>
